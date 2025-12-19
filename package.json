@@ -14,7 +14,6 @@
             "import": "./rx-lib.es.js"
         }
     },
-    "files": ["dist"],
     "scripts": {
         "build": "tsc && vite build"
     },
