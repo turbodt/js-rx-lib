@@ -1,0 +1,27 @@
+{
+    "name": "@zanny/rx-lib",
+    "version": "1.0.0",
+    "description": "My TypeScript library usable in Node or the browser",
+    "license": "ISC",
+    "author": "Daniel Torres",
+    "main": "rx-lib.cjs.js",
+    "module": "rx-lib.es.js",
+    "types": "index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "require": "./rx-lib.cjs.js",
+            "import": "./rx-lib.es.js"
+        }
+    },
+    "files": ["dist"],
+    "scripts": {
+        "build": "tsc && vite build"
+    },
+    "devDependencies": {
+        "patch-package": "^8.0.1",
+        "typescript": "^5.8.2",
+        "vite": "^7.2.2",
+        "vite-plugin-dts": "^4.5.4"
+    }
+}
